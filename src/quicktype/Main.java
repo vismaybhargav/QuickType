@@ -3,8 +3,10 @@ package quicktype;
 import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.layout.Background;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import quicktype.model.GameModel;
 
@@ -28,6 +30,7 @@ public class Main extends Application {
         HBox hBox = new HBox();
         hBox.setSpacing(20);
         hBox.setAlignment(Pos.CENTER);
+        hBox.setBackground(Background.fill((Color.color(0.11764705882352941,0.12156862745098039, 0.13333333333333333))));
 
         borderPane.setCenter(hBox);
         handleWordSwitchKeyEvents();
@@ -45,7 +48,7 @@ public class Main extends Application {
 
     private void initConfigs() {
         stage.setTitle("QuickType");
-        stage.setHeight(1080);
-        stage.setWidth(1920);
+        stage.setHeight(800);
+        stage.setWidth(1000);
     }
 }
