@@ -5,6 +5,7 @@ out/
 
 .idea/
 lib/
+module-info.java
 
 ### Eclipse ###
 .apt_generated
