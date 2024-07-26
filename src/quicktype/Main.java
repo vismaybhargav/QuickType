@@ -9,6 +9,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import quicktype.model.GameModel;
+import quicktype.util.ColorConstants;
 
 public class Main extends Application {
     Stage stage;
@@ -30,7 +31,7 @@ public class Main extends Application {
         HBox hBox = new HBox();
         hBox.setSpacing(20);
         hBox.setAlignment(Pos.CENTER);
-        hBox.setBackground(Background.fill((Color.color(0.11764705882352941,0.12156862745098039, 0.13333333333333333))));
+        hBox.setBackground(Background.fill(ColorConstants.DT_GRAY_1));
 
         borderPane.setCenter(hBox);
         handleWordSwitchKeyEvents();

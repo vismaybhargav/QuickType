@@ -4,6 +4,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.Background;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
+import quicktype.util.ColorConstants;
 
 import java.util.Random;
 
@@ -26,7 +27,7 @@ public class GameModel {
         gameWords = new Label[numWords];
         generateWords();
 
-        gameWords[0].setBackground(Background.fill(Color.RED)); // Highlight the first word because it is focused.
+        gameWords[0].setBackground(Background.fill(ColorConstants.DT_GRAY_1)); // Highlight the first word because it is focused.
     }
 
     private void generateWords() {
